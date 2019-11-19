@@ -10,7 +10,7 @@ import * as _ from 'lodash';
   selector: 'app-filtroaluno',
   templateUrl: 'filtroaluno.html',
 
-})
+}) // dá uns ctl z q eu vou mexer nuns treco
 export class Filtroaluno {
   listaAluno: Observable<Aluno[]>;
   listaFiltro: Aluno[];
@@ -34,5 +34,4 @@ export class Filtroaluno {
     this.filtro['nomealuno'] = val => val.includes(this.valor);
     this.listaFiltro = _.filter(this.alunox, _.conforms(this.filtro));
   }
-
 }

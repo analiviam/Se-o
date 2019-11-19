@@ -5,3 +5,8 @@
     </ion-title>
   </ion-toolbar>
 </ion-header>
+
+<ion-content>
+  <ion-textarea [(ngModel)]="menssagem" placeholder="Insira sua menssagem" name="message" style="width:300px; height:200px; border:1px solid black;"></ion-textarea>
+  <ion-button (click)="salvar()" expand="full">Enviar</ion-button>
+</ion-content>

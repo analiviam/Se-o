@@ -8,8 +8,9 @@
 
  <ion-content>
   <h5>Email:</h5>
-  <ion-input type='text' position="floating"></ion-input>
+   <ion-input type='text' [(ngModel)]="usuario.email"></ion-input>
   <h5>Senha:</h5>
-  <ion-input type='password'></ion-input>
-  <ion-button href="filtroaluno">ACESSAR</ion-button>
+  <ion-input type='password' [(ngModel)]="usuario.senha"></ion-input>
+  <br>
+  <ion-button expand="full" (click)="logar()">ACESSAR</ion-button>
  </ion-content>

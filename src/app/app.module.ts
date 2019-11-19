@@ -12,11 +12,11 @@ import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { Menu } from './menu/menu';
-import { Menssagem } from './menssagem/menssagem';
+import { MenssagemComponent } from './menssagem/menssagem';
 import { Filtroaluno } from './filtroaluno/filtroaluno';
 
 @NgModule({
-  declarations: [AppComponent, Menu, Menssagem, Filtroaluno],
+  declarations: [AppComponent, Menu, MenssagemComponent, Filtroaluno],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, FormsModule, AngularFireDatabaseModule,
   AngularFireModule.initializeApp({
